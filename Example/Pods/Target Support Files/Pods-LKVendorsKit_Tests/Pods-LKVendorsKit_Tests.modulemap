@@ -1,0 +1,6 @@
+framework module Pods_LKVendorsKit_Tests {
+  umbrella header "Pods-LKVendorsKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

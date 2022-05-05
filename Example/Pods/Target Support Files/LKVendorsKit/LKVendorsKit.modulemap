@@ -1,0 +1,6 @@
+framework module LKVendorsKit {
+  umbrella header "LKVendorsKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

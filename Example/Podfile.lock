@@ -1,0 +1,16 @@
+PODS:
+  - LKVendorsKit (0.1.0)
+
+DEPENDENCIES:
+  - LKVendorsKit (from `../`)
+
+EXTERNAL SOURCES:
+  LKVendorsKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LKVendorsKit: 1161406e8cd5a553aa1e70f7ed4783b90bd15bc5
+
+PODFILE CHECKSUM: fcc5d829f32522891fac8fe3ee2a0150a2421d5b
+
+COCOAPODS: 1.10.1
