@@ -2,7 +2,7 @@
   "name": "LKVendorsKit",
   "version": "0.1.0",
   "summary": "A short description of LKVendorsKit.",
-  "description": "TODO: Add long description of the pod here.",
+  "description": "A short description of LKVendorsKit.",
   "homepage": "https://github.com/FULANS/LKVendorsKit",
   "license": {
     "type": "MIT",
@@ -15,13 +15,12 @@
     "git": "https://github.com/FULANS/LKVendorsKit.git",
     "tag": "0.1.0"
   },
+  "pod_target_xcconfig": {
+    "VALID_ARCHS": "x86_64 armv7 arm64"
+  },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "LKVendorsKit/Classes/**/*",
-  "resource_bundles": {
-    "LKVendors": [
-      "LKVendors/Classes/**/*.{png,bundle,txt}"
-    ]
-  }
+  "resources": "LKVendorsKit/Classes/**/*.{png,bundle,txt,strings,json}"
 }

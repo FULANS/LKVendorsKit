@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'A short description of LKVendorsKit.'
 
   s.homepage         = 'https://github.com/FULANS/LKVendorsKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -28,13 +26,16 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/FULANS/LKVendorsKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'LKVendorsKit/Classes/**/*'
   
-  s.resource_bundles = {
-    'LKVendors' => ['LKVendors/Classes/**/*.{png,bundle,txt}']
-  }
+  # s.resource_bundles = {
+  #   'LKVendors' => ['LKVendors/Classes/**/*.{png,bundle,txt}']
+  # }
+  s.resources = 'LKVendorsKit/Classes/**/*.{png,bundle,txt,strings,json}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
